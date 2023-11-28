@@ -137,12 +137,12 @@ section:nth-of-type(4) #section-4-left {
 #section-4-right {
   display: flex;
   width: 63vw;
-  background-color: red;
+  margin-left: -100px;
   justify-content: center;
 }
 #section-4-right div {
   display: flex;
-  gap: 20px;
+  gap: 5px;
 }
 
 #catalogue {
@@ -151,17 +151,70 @@ section:nth-of-type(4) #section-4-left {
 }
 #catalogue div {
   background-color: #384860;
-  padding: 0;
+  margin-top: -21px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#catalogue div h1 {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+#catalogue div p {
+  margin-top: -30px;
+  color: #939696;
+  font-size: 15px;
 }
 
 #loupe {
   display: flex;
   flex-direction: column;
 }
+#loupe div {
+  background-color: #384860;
+  margin-top: -21px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#loupe div h1 {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+#loupe div p {
+  margin-top: -30px;
+  color: #939696;
+  font-size: 15px;
+}
 
 #retro-rocket {
   display: flex;
   flex-direction: column;
+}
+#retro-rocket div {
+  background-color: #384860;
+  margin-top: -21px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#retro-rocket div h1 {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+#retro-rocket div p {
+  margin-top: -30px;
+  color: #939696;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
