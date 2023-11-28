@@ -22,6 +22,40 @@ button {
   border-radius: 5px;
 }
 
+footer {
+  background-color: #3676BB;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #B0BFD2;
+  line-height: 35px;
+}
+footer div h1 {
+  color: #B0C1D6;
+  letter-spacing: 5px;
+}
+
+footer div:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+footer div:nth-of-type(3) {
+  background-color: #363B47;
+  color: #6A6C72;
+}
+
 #background-img {
   background-image: url(../../img/bg-header.png);
   background-repeat: no-repeat;
