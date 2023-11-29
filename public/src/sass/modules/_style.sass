@@ -30,7 +30,7 @@ section:nth-of-type(3)
     line-height: 1px
     gap: 60px
     color: #7A848D
-
+    flex-wrap: wrap
     div:nth-of-type(1)
         background-color: #E2E0E0
         display: flex
@@ -89,19 +89,24 @@ section:nth-of-type(4)
     display: flex
     padding-top: 110px
     padding-bottom: 110px
+    flex-wrap: wrap
+    justify-content: space-around
     #section-4-left
-        width: 37vw
+        // width: 37vw
         display: flex
         justify-content: right
         font-size: 18px
+        flex-wrap: wrap
 #section-4-right
     display: flex
-    width: 63vw
+    // width: 63vw
     margin-left: -100px
     justify-content: center
+    flex-wrap: wrap
     div
         display: flex
         gap: 5px
+        flex-wrap: wrap      
 
 #catalogue
     display: flex
@@ -169,3 +174,37 @@ section:nth-of-type(4)
             margin-top: -30px
             color: #939696   
             font-size: 15px   
+
+@media (max-width: 576px)
+    section:nth-of-type(4)
+        display: flex
+        flex-wrap: wrap
+        #section-4-right
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            width: 100vw
+            margin-top: 40px
+            margin-left: 60px
+        #section-4-left
+            margin: 30px    
+
+@media (min-width: 576px) and (max-width: 768px)
+    section:nth-of-type(4)
+        display: flex
+        flex-wrap: wrap
+        #section-4-right
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            width: 100vw
+            margin-top: 40px
+            margin-left: 60px
+            #centrage
+                display: flex
+                justify-content: center
+                align-items: center
+        #section-4-left
+            margin: 30px                

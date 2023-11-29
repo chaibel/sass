@@ -7,10 +7,16 @@ body nav {
   justify-content: space-around;
   background-color: #363C47;
   color: white;
+  flex-wrap: wrap;
 }
 body nav div:nth-of-type(2) {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  color: white;
 }
 
 button {
@@ -88,6 +94,7 @@ section:nth-of-type(3) {
   line-height: 1px;
   gap: 60px;
   color: #7A848D;
+  flex-wrap: wrap;
 }
 section:nth-of-type(3) div:nth-of-type(1) {
   background-color: #E2E0E0;
@@ -160,23 +167,26 @@ section:nth-of-type(4) {
   display: flex;
   padding-top: 110px;
   padding-bottom: 110px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 section:nth-of-type(4) #section-4-left {
-  width: 37vw;
   display: flex;
   justify-content: right;
   font-size: 18px;
+  flex-wrap: wrap;
 }
 
 #section-4-right {
   display: flex;
-  width: 63vw;
   margin-left: -100px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #section-4-right div {
   display: flex;
   gap: 5px;
+  flex-wrap: wrap;
 }
 
 #catalogue {
@@ -249,6 +259,48 @@ section:nth-of-type(4) #section-4-left {
   margin-top: -30px;
   color: #939696;
   font-size: 15px;
+}
+
+@media (max-width: 576px) {
+  section:nth-of-type(4) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(4) #section-4-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 40px;
+    margin-left: 60px;
+  }
+  section:nth-of-type(4) #section-4-left {
+    margin: 30px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  section:nth-of-type(4) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(4) #section-4-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 40px;
+    margin-left: 60px;
+  }
+  section:nth-of-type(4) #section-4-right #centrage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section:nth-of-type(4) #section-4-left {
+    margin: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
